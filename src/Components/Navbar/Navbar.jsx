@@ -10,7 +10,7 @@ const Navbar = () => {
     <motion.nav
       initial={{top: "-100%"}}
       animate={{top: 0}}
-      transition={{duration: 1.5, delay: 2.5}}
+      transition={{duration: 2, delay: 2}}
     >
       <div className='nav-wrapper'>
         <div className='logo'>

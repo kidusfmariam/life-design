@@ -6,11 +6,13 @@
 }
 body{
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
 }
 .yellow{
   color: #E5F063;
