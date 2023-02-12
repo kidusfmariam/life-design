@@ -26,9 +26,9 @@ const Hero = () => {
     <div className="hero-wrapper">
         <div className='hero-content'>
             <motion.h1
-            initial={{opacity: 0, scale: 1.3}}
-            animate={{opacity: 1, scale: 1}}
-            transition={{duration: .5, delay: 2.6}}
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 1.2, delay: 2.6}}
             >Bring your<br/>space to <span className='yellow'>life.</span></motion.h1>
             <motion.div 
                 initial={{opacity: 0}}

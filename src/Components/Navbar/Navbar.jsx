@@ -1,12 +1,17 @@
 import { useState } from 'react'
 import './Navbar.css'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
+import { motion } from 'framer-motion'
 const Navbar = () => {
 
   const[menu, setMenu] = useState(false)
   return (
     <>
-    <nav>
+    <motion.nav
+      initial={{top: "-100%"}}
+      animate={{top: 0}}
+      transition={{duration: 1.5, delay: 2.5}}
+    >
       <div className='nav-wrapper'>
         <div className='logo'>
           <span>Life.</span>
@@ -19,7 +24,7 @@ const Navbar = () => {
           <div className='menu-btn' onClick={() => setMenu(!menu)}><AiOutlineMenu/></div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
 
     <div className={`menu-sm ${menu ? 'collapsed' : ''}`}>
       <div className='close-btn' onClick={() => setMenu(!menu)}><AiOutlineClose/></div>
