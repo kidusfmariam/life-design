@@ -1,0 +1,77 @@
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2vh 0;
+    z-index: 999;
+    color: #fff;
+}
+.nav-wrapper{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo span{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: clamp(1.2rem, 2vw, 10rem);
+    color: #E5F063;
+}
+.nav-items{
+    display: flex;
+    gap: clamp(2rem, 2.5vw, 10rem);
+    font-size: clamp(1rem, 1.2vw, 10rem);
+    text-transform: uppercase;
+    font-weight: 300
+}
+.menu-btn{
+    display: none;
+}
+.menu-sm{
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .nav-items p{
+        display: none;
+    }
+    .menu-btn{
+        display: inline-block;
+        font-size: clamp(1.4rem, 2vw, 10rem);
+        cursor: pointer;
+    }
+    .menu-sm{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: #1A1919;
+        z-index: -9999;
+        color: #fff;
+        opacity: 0;
+    }
+    .collapsed{
+        opacity: 1;
+        z-index: 9999;
+    }
+    .menu-sm-items{
+        margin-left: clamp(3rem, 4vw, 10rem);
+    }
+    .menu-sm-items p{
+        font-size: clamp(2.3rem, 3vw, 10rem);
+        font-weight: 200;
+        text-transform: uppercase;
+        margin-bottom: 3vh;
+    }
+    .close-btn{
+        cursor: pointer;
+        position: absolute;
+        top: 2vh;
+        right: 3vw;
+        font-size: clamp(1.4rem, 2vw, 10rem);
+    }
+}

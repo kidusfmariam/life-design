@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .4s ease-in-out;
+}
+body{
+  font-family: 'Inter', sans-serif;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.yellow{
+  color: #E5F063;
+}
