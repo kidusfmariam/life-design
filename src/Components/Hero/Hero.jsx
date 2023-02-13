@@ -18,7 +18,7 @@ const Hero = () => {
     <motion.div 
         initial={{opacity: 1, zIndex: 1000000}}
         animate={{opacity: 0, zIndex: -100000}}
-        transition={{duration: 1.4, delay: 1.7}}
+        transition={{duration: 1.4, delay: 1.7, ease: "anticipate"}}
     className='loading-logo'>Life.</motion.div>
     <div className='hero-container'>
     <img className='hero-bg-img' src="/Images/Home/landing-page-bg.jpg" alt="hero-bg-img" />
