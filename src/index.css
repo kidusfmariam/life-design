@@ -20,3 +20,19 @@ img{
 .yellow{
   color: #E5F063;
 }
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  outline: none;
+  border: none;
+  padding: .5rem 2rem;
+  font-size: clamp(1rem, 1.2vw, 10rem);
+  text-transform: uppercase;
+  background-color: #E5F063;
+  cursor: pointer;
+}

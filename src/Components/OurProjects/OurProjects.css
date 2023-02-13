@@ -1,9 +1,4 @@
 .our-projects{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 3vh 0;
 }
 .our-projects-container{

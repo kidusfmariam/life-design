@@ -3,7 +3,7 @@ import {BsArrowRight} from 'react-icons/bs'
 import { motion } from 'framer-motion'
 const OurProjects = () => {
   return (
-    <div className='our-projects'>
+    <div className='our-projects container'>
       <div className="our-projects-container">
         <div className='our-projects-content'>
             <motion.h1
