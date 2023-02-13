@@ -22,7 +22,10 @@ footer{
 .footer-nav{
     display: flex;
     gap: 4rem;
+}
+.footer-nav p{
     font-weight: 500;
+    font-size: clamp(1.2rem, 1.2vw, 4rem);
 }
 .footer-wrapper p{
     text-align: center;

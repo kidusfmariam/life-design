@@ -8,7 +8,7 @@
 .newsletter-wrapper h1{
     font-weight: 300;
     text-align: center;
-    font-size: clamp(4rem, 5vw, 12rem);
+    font-size: clamp(3rem, 5vw, 12rem);
     text-transform: uppercase;
 }
 .newsletter-wrapper p{
@@ -25,4 +25,12 @@
     width: 35%;
     height: 6vh;
     font-size: 1.3rem;
+}
+@media screen and (max-width: 800px) {
+    .newsletter-wrapper p{
+        width: 90%;
+    }
+    .newsletter-wrapper input{
+        width: 80%;
+    }
 }
