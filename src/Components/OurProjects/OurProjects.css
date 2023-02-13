@@ -26,14 +26,15 @@
 .our-projects-cta{
     display: flex;
     background: #E5F063;
-    gap: 1rem;
+    gap: clamp(0.5rem, 1vw, 1rem);
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
     cursor: pointer;
+    padding: 1rem 1rem;
 }
 .our-projects-cta p{
-    font-size: clamp(1.2rem, 1.5vw, 10rem);
+    font-size: clamp(1rem, 1.5vw, 10rem);
     text-transform: uppercase;
 }
 .our-projects-img{
@@ -52,4 +53,18 @@
 img:hover{
     transform: scale(1.02);
     transition: .5s all ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+    .our-projects-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .our-projects-content{
+        width: 90%;
+    }
+    .our-projects-img{
+        width: 80%;
+    }
 }
