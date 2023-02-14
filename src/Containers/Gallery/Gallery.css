@@ -1,0 +1,26 @@
+.gallery-container{
+    width: 95%;
+    margin: auto;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+
+}
+.gallery-container h1{
+    font-size: clamp(4rem, 7vw, 10rem);
+    font-weight: 400;
+    margin-bottom: 7vh;
+}
+.gallery-images{
+    display: grid;
+    gap: 4rem;
+}
+.project-cta{
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+.project-cta button{
+    padding: 1rem 1.6rem;
+}
