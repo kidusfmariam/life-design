@@ -34,7 +34,12 @@ const Motto = () => {
                     <img src="/Images/About/about-img.jpg" alt="about-img" />
                 </div>
                 <div className='about-paragraph'>
-                    <p>With over 20 years of experience, we bring a skilled eye for details, coupled with flawless execution, to ensure your home or commercial space is a reflection of your individual style. Whether it be a new construction or renovation projects, no matter the scope or size, Life Interiors specializes in custom design solutions tailored specifically for each project. Whether you’re looking for residential or commercial design services, you can trust that your vision will be expertly crafted under our team.</p>
+                    <motion.p
+                      initial={{opacity: 0}}
+                      whileInView={{opacity: 1}}
+                      transition={{duration: 0.8, delay: 0.3}}
+                      viewport={{once: true}}
+                    >With over 20 years of experience, we bring a skilled eye for details, coupled with flawless execution, to ensure your home or commercial space is a reflection of your individual style. Whether it be a new construction or renovation projects, no matter the scope or size, Life Interiors specializes in custom design solutions tailored specifically for each project. Whether you’re looking for residential or commercial design services, you can trust that your vision will be expertly crafted under our team.</motion.p>
                 </div>
             </div>
       </div>
