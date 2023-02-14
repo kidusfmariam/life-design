@@ -1,10 +1,11 @@
 import React from 'react'
 import './Hero.css'
 import {AiOutlineArrowRight} from 'react-icons/ai'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 const Hero = () => {
   return (
     <>
+    <AnimatePresence>
     <motion.div 
     initial={{left: 0}}
     animate={{left: "-1000%"}}
@@ -20,7 +21,12 @@ const Hero = () => {
         animate={{opacity: 0, zIndex: -100000}}
         transition={{duration: 1.4, delay: 1.7, ease: "anticipate"}}
     className='loading-logo'>Life.</motion.div>
-    <div className='hero-container'>
+    <motion.div 
+    initial={{y: "-500%"}}
+    animate={{y: 0}}
+    exit={{y: "-500%"}}
+    transition={{duration: 1.2, delay: 0.4}}
+    className='hero-container'>
     <img className='hero-bg-img' src="/Images/Home/landing-page-bg.jpg" alt="hero-bg-img" />
     <div className='overlay'></div>
     <div className="hero-wrapper">
@@ -28,6 +34,7 @@ const Hero = () => {
             <motion.h1
             initial={{opacity: 0}}
             animate={{opacity: 1}}
+            exit={{opacity: 0}}
             transition={{duration: 1.2, delay: 2.6}}
             >Bring your<br/>space to <span className='yellow'>life.</span></motion.h1>
             <motion.div 
@@ -41,7 +48,8 @@ const Hero = () => {
         </div>
     </div>
       
-    </div>
+    </motion.div>
+    </AnimatePresence>
     </>
   )
 }

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './Navbar.css'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
 
   const[menu, setMenu] = useState(false)
@@ -17,10 +18,11 @@ const Navbar = () => {
           <span>Life.</span>
         </div>
         <div className='nav-items'>
-          <p>Home</p>
-          <p>Works</p>
-          <p>About</p>
-          <p>Contact</p>
+          <Link to='/' style={{textDecoration: 'none', color: "white"}}><p>Home</p></Link>
+          <Link to='/works' style={{textDecoration: 'none', color: "white"}}><p>Works</p></Link>
+          <Link to='/about' style={{textDecoration: 'none', color: "white"}}><p>About</p></Link>
+          <Link to='/contact' style={{textDecoration: 'none', color: "white"}}><p>Contact</p></Link>
+          
           <div className='menu-btn' onClick={() => setMenu(!menu)}><AiOutlineMenu/></div>
         </div>
       </div>

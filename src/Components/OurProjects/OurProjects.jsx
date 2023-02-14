@@ -33,7 +33,7 @@ const OurProjects = () => {
             <motion.div 
                 initial={{left: 0}}
                 whileInView={{left: "400%"}}
-                transition={{duration: 1.2, delay: 0.6}}
+                transition={{duration: .6, delay: 0.6}}
                 viewport={{once: true}}
             className='overlay-2'></motion.div>
             <img src="/Images/Home/landing-page-projects-cta.jpg" alt="landing-page-projects-cta.jpg" />

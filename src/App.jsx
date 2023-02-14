@@ -5,9 +5,11 @@ import Contact from "./Pages/Contact"
 import Navbar from "./Components/Navbar/Navbar"
 import Footer from "./Components/Footer/Footer"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { AnimatePresence } from "framer-motion"
 function App() {
 
   return (
+  <AnimatePresence>
     <Router>
         <Navbar/>
       <Routes>
@@ -18,6 +20,7 @@ function App() {
       </Routes>
         <Footer/>
     </Router>
+    </AnimatePresence>
   )
 }
 

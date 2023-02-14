@@ -1,10 +1,10 @@
-import React from 'react'
+import Motto from "../Containers/Motto/Motto"
 
 const About = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Motto/>
+    </>
   )
 }
 

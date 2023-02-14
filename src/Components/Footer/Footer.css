@@ -12,7 +12,7 @@ footer{
     width: 95vw;
     display: flex;
     align-items: center;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
     justify-content: space-between;
 }
 .footer-main h1{
