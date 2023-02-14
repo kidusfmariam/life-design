@@ -10,7 +10,7 @@ const Bio = () => {
             exit={{opacity: 0}}
             transition={{duration: .5, delay: 0.4}}
             viewport={{once: true}}
-        className='bio-p'>Established in 2005, Life Interior Design has a team of experienced designers and architects who strive to bring creativity to every project, big or small. With our focus on modern design trends and holistic behaviors, we craft unique spaces that bring out the best in your home. </motion.p>
+        className='bio-p'>Established in 2002, Life Interior Design has a team of experienced designers and architects who strive to bring creativity to every project, big or small. With our focus on modern design trends and holistic behaviors, we craft unique spaces that bring out the best in your home. </motion.p>
       </div>
     </div>
   )
