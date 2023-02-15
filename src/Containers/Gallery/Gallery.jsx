@@ -1,5 +1,6 @@
 import './Gallery.css'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 const Gallery = () => {
   return (
     <div className='gallery-container'>
@@ -25,7 +26,7 @@ const Gallery = () => {
            
         </div>
         <div className='project-cta'>
-            <button>View our projects</button>
+          <Link to='/works' style={{textDecoration: 'none'}}><button>View our projects</button></Link>  
         </div>
     </div>
   )

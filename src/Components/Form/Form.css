@@ -55,3 +55,9 @@ label, .form-element input, .form-element textarea{
 label{
     margin-right: .4rem;
 }
+
+@media screen and (max-width: 500px) {
+    .form-element input, .form-element textarea{
+        width: 120%;
+    } 
+}

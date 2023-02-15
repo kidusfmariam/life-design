@@ -6,11 +6,13 @@ import Navbar from "./Components/Navbar/Navbar"
 import Footer from "./Components/Footer/Footer"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { AnimatePresence } from "framer-motion"
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop"
 function App() {
 
   return (
   <AnimatePresence>
     <Router>
+        <ScrollToTop/>
         <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>} />
