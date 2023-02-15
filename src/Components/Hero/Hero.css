@@ -1,7 +1,9 @@
 .hero-container, .hero-wrapper{
     width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 .hero-bg-img, .overlay{
     position: absolute;
@@ -67,4 +69,11 @@
     z-index: 100000;
     font-size: clamp(7rem, 7vw, 10rem);
     font-weight: 700;
+}
+@media screen and (max-width: 500px) {
+    .hero-wrapper{
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: flex-end;
+    }
 }

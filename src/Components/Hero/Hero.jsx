@@ -9,12 +9,12 @@ const Hero = () => {
 
     <motion.div 
     initial={{left: 0}}
-    animate={{left: "-1000%"}}
+    animate={{left: "-100%"}}
     transition={{duration: 1.3, delay: 2.3}}
     className='loading loading-1'></motion.div>
     <motion.div 
     initial={{right: 0}}
-    animate={{right: "-1000%"}}
+    animate={{right: "-100%"}}
     transition={{duration: 1.3, delay: 2.3}}
     className='loading loading-2'></motion.div>
     <motion.div 

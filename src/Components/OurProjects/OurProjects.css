@@ -1,5 +1,6 @@
 .our-projects{
     padding: 3vh 0;
+    overflow-x: hidden;
 }
 .our-projects-container{
     width: 60%;
@@ -41,6 +42,7 @@
     width: 50%;
     height: 90%;
     position: relative;
+    overflow-x: hidden;
 }
 .overlay-2{
     position: absolute;
@@ -50,10 +52,7 @@
     height: 100%;
     width: 100%;
 }
-.our-projects-img img:hover{
-    transform: scale(1.02);
-    transition: .5s all ease-in-out;
-}
+
 
 @media screen and (max-width: 900px) {
     .our-projects-container{
@@ -66,5 +65,7 @@
     }
     .our-projects-img{
         width: 80%;
+        height: 50%;
+        overflow-x: hidden;
     }
 }

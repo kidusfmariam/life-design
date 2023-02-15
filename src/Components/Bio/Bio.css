@@ -3,6 +3,7 @@
     height: 70vh;
     display: flex;
     align-items: center;
+    overflow-x: hidden;
 }
 .bio-wrapper{
     width: 95%;
