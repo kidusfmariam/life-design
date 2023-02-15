@@ -6,7 +6,7 @@ const Motto = () => {
       <div className='motto-wrapper'>
         <motion.div 
             initial={{width: 0}}
-            whileInView={{width: "100%"}}
+            animate={{width: "100%"}}
             viewport={{once: true}}
             transition={{duration: 1.2, ease: 'easeInOut'}}
         className='motto-bg'></motion.div>

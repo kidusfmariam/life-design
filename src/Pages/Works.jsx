@@ -1,10 +1,11 @@
-import React from 'react'
-
+import Projects from "../Containers/ProjectsContainer/Projects"
+import Newsletter from '../Components/Newsletter/Newsletter'
 const Works = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+     <Projects/> 
+     <Newsletter/>
+    </>
   )
 }
 
