@@ -10,7 +10,7 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop"
 function App() {
 
   return (
-  <AnimatePresence>
+  <AnimatePresence initial={false}>
     <Router>
         <ScrollToTop/>
         <Navbar/>

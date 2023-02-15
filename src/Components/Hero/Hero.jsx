@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Hero = () => {
   return (
     <>
-    <AnimatePresence>
+
     <motion.div 
     initial={{left: 0}}
     animate={{left: "-1000%"}}
@@ -50,7 +50,6 @@ const Hero = () => {
     </div>
       
     </motion.div>
-    </AnimatePresence>
     </>
   )
 }
