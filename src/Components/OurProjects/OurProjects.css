@@ -42,7 +42,8 @@
     width: 50%;
     height: 90%;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
+
 }
 .overlay-2{
     position: absolute;
