@@ -2,6 +2,7 @@ import React from 'react'
 import './Hero.css'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Link } from 'react-router-dom'
 const Hero = () => {
   return (
     <>
@@ -37,14 +38,14 @@ const Hero = () => {
             exit={{opacity: 0}}
             transition={{duration: 1.2, delay: 2.6}}
             >Bring your<br/>space to <span className='yellow'>life.</span></motion.h1>
-            <motion.div 
+             <Link to='/contact' style={{textDecoration: 'none'}}><motion.div 
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 transition={{duration: 1.2, delay: 2.8}}
             className='hero-cta'>
-                <p className='cta-text'>Feel <br/> free to<br/> reach out</p>
+              <p className='cta-text'>Feel <br/> free to<br/> reach out</p>
                 <p><AiOutlineArrowRight/></p>
-            </motion.div>
+            </motion.div></Link> 
         </div>
     </div>
       

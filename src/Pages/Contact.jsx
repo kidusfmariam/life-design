@@ -1,10 +1,11 @@
-import React from 'react'
-
+import Newsletter from "../Components/Newsletter/Newsletter"
+import Form from "../Components/Form/Form"
 const Contact = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Form/>
+      <Newsletter/>
+    </>
   )
 }
 

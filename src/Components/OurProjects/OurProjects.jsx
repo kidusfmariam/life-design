@@ -1,6 +1,7 @@
 import './OurProjects.css'
 import {BsArrowRight} from 'react-icons/bs'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 const OurProjects = () => {
   return (
     <div className='our-projects container'>
@@ -19,7 +20,7 @@ const OurProjects = () => {
                 transition={{duration: 1.2, delay: 0.7}}
                 viewport={{once: true}}
             >Start exploring our portfolio to get inspired and book a consultation today!</motion.p>
-            <motion.div 
+            <Link to='/works' style={{textDecoration: 'none'}}><motion.div 
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration: 1.2, delay: 0.9}}
@@ -27,7 +28,7 @@ const OurProjects = () => {
             className='our-projects-cta'>
                 <p>View Our Projects</p>
                 <p><BsArrowRight/></p>
-            </motion.div>
+            </motion.div></Link>
         </div>
         <div className='our-projects-img'>
             <motion.div 

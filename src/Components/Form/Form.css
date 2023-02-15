@@ -1,0 +1,57 @@
+.contact-page-container{
+    width: 100%;
+    margin: auto;
+    padding: 12vh 0;
+    background-color: #1A1818;
+    color: white;
+}
+.contact-page-container h1{
+    font-size: clamp(3rem, 4vw, 12rem);
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5rem;
+    padding: 5vh 0;
+    width: auto;
+    height: auto;
+}
+.name{
+    display: grid;
+    gap: clamp(2rem, 4vw, 12rem);
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.form-element{
+    width: 100%;
+}
+label, .form-element input, .form-element textarea{
+    font-size: clamp(1.2rem, 1.5vw, 7rem);
+    font-weight: 200;
+
+}
+
+.form-element input, .form-element textarea{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #E5F063;
+    width: 140%;
+    padding: .2rem 0.5rem;
+    background-color: transparent;
+    color: white;
+}
+.message{
+    padding-bottom: 5vh;
+}
+.form-element textarea{
+    margin-bottom: 5vh;
+    min-height: 10vh;
+}
+label{
+    margin-right: .4rem;
+}
