@@ -15,7 +15,7 @@ const Navbar = () => {
     >
       <div className='nav-wrapper'>
         <div className='logo'>
-          <span>Life.</span>
+        <Link to='/' style={{textDecoration: 'none', color: "white"}}> <span>Life.</span></Link>
         </div>
         <div className='nav-items'>
           <Link to='/' style={{textDecoration: 'none', color: "white"}}><p>Home</p></Link>
@@ -31,10 +31,10 @@ const Navbar = () => {
     <div className={`menu-sm ${menu ? 'collapsed' : ''}`}>
       <div className='close-btn' onClick={() => setMenu(!menu)}><AiOutlineClose/></div>
       <div className="menu-sm-items">
-          <p>Home</p>
-          <p>Works</p>
-          <p>About</p>
-          <p>Contact</p>
+      <Link to='/' style={{textDecoration: 'none', color: "white"}}><p onClick={() => setMenu(!menu)}>Home</p></Link>
+      <Link to='/works' style={{textDecoration: 'none', color: "white"}}>   <p onClick={() => setMenu(!menu)}>Works</p></Link>
+      <Link to='/about' style={{textDecoration: 'none', color: "white"}}>    <p onClick={() => setMenu(!menu)}>About</p></Link>
+      <Link to='/contact' style={{textDecoration: 'none', color: "white"}}>   <p onClick={() => setMenu(!menu)}>Contact</p></Link>
       </div>
 
     </div>

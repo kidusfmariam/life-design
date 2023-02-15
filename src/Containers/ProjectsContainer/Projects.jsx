@@ -8,7 +8,7 @@ const Projects = () => {
         <motion.div 
           initial={{height: 0}}
           animate={{height: "50vh"}}
-          transition={{duration: 1.2, ease: easeInOut}}
+          transition={{duration: 0.4, delay: 0.2}}
         className='projects-overlay'></motion.div>
         <div className='projects-title'>
             <motion.h1
